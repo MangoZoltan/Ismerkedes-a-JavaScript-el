@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismerkedés a JavaScriptel</title>
+    <style>
+        input[type="text"]{
+            width: 147px;
+            padding: 5px;
+            outline: none;
+        }
+        input[type="button"]{
+            width: 40px;
+            height: 40px;
+            background-color: dodgerblue;
+            color: white;
+            border: 2px solid #333;
+            text-align: center;
+            line-height: 40px;
+            margin: 0;
+            padding: 0;
+            float: left;
+            cursor: pointer;
+        }
+        #ez{
+            background-color: rgb(37, 86, 133);
+        }
+        input[type="button"]:hover, #ez:hover{
+            background-color: #777;
+        }
+        #bill{
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+        }
+        #keret{
+            width: 160px;
+            margin: auto;
+            border: 8px solid #444;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        
+        <!-- <input type="text" id="hatter" /> -->
+        <!-- <input type="number" min="0" max="255" id="red">
+        <input type="number" min="0" max="255" id="green">
+        <input type="number" min="0" max="255" id="blue"> -->
+        <div id="keret">
+            <input type="text" id="mezo" ><br>
+            <!-- <input type="text" id="elso" onclick="sel('elso')" placeholder="Első elem"><br>
+            <input type="text" id="masodik" onclick="sel('masodik')" placeholder="Második elem"><br>
+            <input type="text" id="szamitott" placeholder="Eredmény"><br> -->
+           
+            
+            
+            
+            <div style="clear: both;"></div>
+            <div id="bill">
+                <input type="button" value="1" onclick="ir('1')">
+                <input type="button" value="2" onclick="ir('2')">
+                <input type="button" value="3" onclick="ir('3')">
+                <input id="ez" type="button" value="+" onclick="ir(' + ')">
+            </div>
+            <div id="bill">
+                <div style="clear: both;"></div>
+                <input type="button" value="4" onclick="ir('4')">
+                <input type="button" value="5" onclick="ir('5')">
+                <input type="button" value="6" onclick="ir('6')">
+                <input id="ez" type="button" value="-" onclick="ir(' - ')">
+            </div>
+            <div id="bill">
+                <div style="clear: both;"></div>
+                <input type="button" value="7" onclick="ir('7')">
+                <input type="button" value="8" onclick="ir('8')">
+                <input type="button" value="9" onclick="ir('9')">
+                <input id="ez" type="button" value="*" onclick="ir(' * ')">
+            </div>
+            <div id="bill">
+                <div style="clear: both;"></div>
+                <input type="button" value="0" onclick="ir('0')" >
+                <input id="ez" type="button" value="C" onclick="clearM()" >
+                <input id="ez" type="button" value="E" onclick="szamit()" >
+                <input id="ez" type="button" value="/" onclick="ir(' / ')">
+            </div>
+        </div>
+        
+    </div>
+    <script src="./szamologep.js"></script>
+</body>
+</html>

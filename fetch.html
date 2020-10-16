@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Fetch</title>
+</head>
+<body>
+    <img id="kep" src="" alt="">
+
+    <script>
+        fetch("https://avatars3.githubusercontent.com/u/71122976?s=460&u=267fb975753aff1a9405ee19df0921631a3acfde&v=4")
+        .then(response =>{
+                return response.blob();
+        })
+        .then( blob =>{
+            document.getElementById("kep").src = URL.createObjectURL(blob);
+        })
+    </script>
+</body>
+</html>
